@@ -56,8 +56,8 @@ resource "aws_lb_listener" "webapp_listener" {
 
 
 # Create ALB2 Target Group
-resource "aws_lb_target_group" "webapp-target-group_2" {
-  name     = "webapp-target-group-2"
+resource "aws_lb_target_group" "webapp-target-group-2-new" {
+  name     = "webapp-target-group-2-new"
   port     = 80
   protocol = "HTTP"
   vpc_id   = var.vpc_id
@@ -84,6 +84,6 @@ resource "aws_lb_listener" "webapp_listener_2" {
 
   default_action {
     type             = "forward"
-    target_group_arn = aws_lb_target_group.webapp-target-group_2.arn
+    target_group_arn = aws_lb_target_group.webapp-target-group-2-new.arn
   }
 }

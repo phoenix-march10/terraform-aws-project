@@ -11,7 +11,7 @@ output "webapp_subnet_2b_public_id" {
 }
 
 output "webapp_key_name" {
-  value = aws_key_pair.webapp-key.key_name
+  value = aws_key_pair.webapp-key-new.key_name
 }
 
 output "allow_22_80_id" {

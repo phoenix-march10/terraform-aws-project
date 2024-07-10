@@ -30,8 +30,8 @@ resource "aws_subnet" "webapp-subnet-2b-public" {
   }
 }
 
-resource "aws_key_pair" "webapp-key" {
-  key_name   = var.key_name
+resource "aws_key_pair" "webapp-key-new" {
+  key_name   = var.key_name_new
   public_key = var.public_key
 }
 

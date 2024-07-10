@@ -11,5 +11,5 @@ output "alb_2_arn" {
 }
 
 output "alb_2_target_group_arn" {
-  value = aws_lb_target_group.webapp-target-group_2.arn
+  value = aws_lb_target_group.webapp-target-group-2-new.arn
 }

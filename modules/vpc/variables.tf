@@ -34,7 +34,7 @@ variable "availability_zone_2b" {
   default     = "us-east-2b"
 }
 
-variable "key_name" {
+variable "key_name_new" {
   description = "The name of the key pair"
   type        = string
   default     = "webapp-key"
